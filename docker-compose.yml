@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  vite-react-app:
+    build: .
+    ports:
+      - "5050:8080"   # Гадаад 3000 порт руу доторх nginx-ийн 80 порт холбогдох
+    restart: unless-stopped
